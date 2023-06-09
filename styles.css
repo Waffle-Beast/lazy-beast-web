@@ -9,6 +9,7 @@ body {
     color: pink;
     background: #ffffff2a;
 }
+
 ul {
     margin: 0;
     padding: 0;
@@ -43,6 +44,10 @@ nav {
     box-shadow: 0 0 20px pink, 0 0 40px pink, 0 0 80px #fff;
 }
 
+header h1 {
+    letter-spacing: 2px;
+}
+
 .quote {
     text-shadow: 0 0 4px pink;
 }
@@ -50,13 +55,14 @@ nav {
 header {
     margin-left: 10vh;
     top: 0;
+    display: block;
 }
 
-span {
+header h1 span {
     transition: 0.4s;
 }
 
-span:hover {
+header h1 span:hover {
     color: rgb(255, 199, 209);
     text-shadow: 0 0 20px #fff;
 }
@@ -67,13 +73,27 @@ span:hover {
 
 .text {
     text-align: center;
+    letter-spacing: 1px;
+}
+
+.resume {
+    position: relative;
+    margin: 10px;
+    padding-top: 15px;
 }
 
 .title {
     text-align: center;
-    width: 50%;
+    width: 60%;
     letter-spacing: 2px;
-    position: absolute;
+}
+
+/* .alert {
+    text-shadow: 0 0 2px red;
+} */
+
+.alert-word {
+    color: red;
 }
 
 .lnk {
@@ -96,10 +116,13 @@ span:hover {
 }
 
 .fig {
-    position: relative;
-    overflow: auto;
-    float: right;
-    width: 60vh;
+    background-color: rgb(22, 22, 22);
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    display: block;
+    max-width: 350px;
     border-radius: 15px;
     box-shadow: 0 0 10px #000, 0 0 20px pink;
     padding-bottom: 15px;
@@ -113,9 +136,55 @@ span:hover {
 
 .img {
     border-radius: 20px;
-    width: 60vh;
+    max-width: 350px;
     scale: 98%;
 }
+
+table, tr, th, td {
+    border-bottom: 1px solid #fff;
+    border-collapse: collapse;
+}
+
+table {
+    float: left;
+    margin: 10px 10px 10px;
+    padding: 20px;
+    width: 600px;
+    height: 200px;
+}
+
+header div table tr td a {
+    text-decoration: none;
+    color: pink;
+    transition: 0.3s;
+}
+
+header div table tr:nth-child(even) {
+    background-color: rgba(255, 192, 203, 0.068);
+    transition: 0.2s;
+}
+
+header div table tr {
+    transition: 0.2s;
+}
+
+.glow-row:hover:nth-child(even) {
+    background-color: #ffffff2c;
+}
+
+.glow-row:hover {
+    background-color: rgba(255, 192, 203, 0.199);
+}
+
+header div table tr td a:hover {
+    color: #fff;
+    text-shadow: 0 0 10px pink;
+}
+
+
+
+
+
 
 
 
