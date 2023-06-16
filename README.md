@@ -9,9 +9,7 @@ Project (this website) had started the 7th june 2023
 
 
 
-# // !This site is NOT optimized for all devices and browsers. So I recommend you to use PC as device and Google Chrome as browser! //
-
-# THIS PROJECT WILL BE REMADE! (cuz of a lot of shitty things and ways that i used for making it)
+# This project was remade the 16th of July 2023
 
 
 
