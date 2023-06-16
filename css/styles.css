@@ -185,7 +185,8 @@ h1.title__title span:hover {
 
 
 .alert-word {
-  color: red;
+  color: rgb(0, 255, 0);
+  font-size: 25px;
 }
 
 .main__warning {
@@ -203,7 +204,6 @@ h1.title__title span:hover {
 }
 
 .main__image-link {
-  text-decoration: none;
   color: #fff;
 }
 
@@ -219,7 +219,6 @@ h1.title__title span:hover {
 }
 
 .main__figure {
-  margin: 0;
   background-color: rgb(22, 22, 22);
   width: 350px;
   height: 420px;
