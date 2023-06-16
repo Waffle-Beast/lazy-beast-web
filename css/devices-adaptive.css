@@ -90,4 +90,34 @@
     height: 200px;
   }
 
+
+  /* Navigation */
+
+
+  .header__navigation {
+    column-gap: 5px;
+  }
+
+  .header__btn {
+    display: block;
+    color: #fff;
+    background-color: rgb(22, 22, 22);
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: 0.5s;
+  }
+  
+  .header__btn:hover {
+    color: pink;
+    scale: 100%;
+    letter-spacing: 2px;
+    box-shadow: 0 0 20px pink, 0 0 40px pink, 0 0 50px #fff;
+  }
+  
+  .header__btn:active {
+    scale: 100%;
+    letter-spacing: 2px;
+    box-shadow: 0 0 20px pink, 0 0 45px pink, 0 0 55px #fff;
+  }
+
 }
