@@ -12,6 +12,10 @@ html {
   background: #ffffff2a;
 }
 
+.none {
+  display: none;
+}
+
 
 /* ScrollBar */
 
@@ -92,6 +96,26 @@ body {
 .header__btn:active {
   scale: 90%;
 }
+
+
+/* UI For small screen devices */
+
+
+.adaptive-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  margin: 5px auto;
+  width: 200px;
+  height: 8px;
+  border-radius: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+
 
 
 /* Title */
@@ -224,7 +248,7 @@ h1.title__title span:hover {
   height: 420px;
   box-shadow: 0 0 10px #000, 0 0 15px #000;
   transition: 0.4s;
-  border-radius: 40px 40px 20px 20px
+  border-radius: 20px;
 }
 
 .main__figure:hover {
