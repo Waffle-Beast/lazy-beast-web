@@ -83,6 +83,7 @@ body {
   background-color: rgb(22, 22, 22);
   padding: 15px 25px;
   border-radius: 15px;
+  border: 1px solid transparent;
   transition: 0.7s;
 }
 
@@ -90,8 +91,7 @@ body {
   scale: 105%;
   color: pink;
   letter-spacing: 5px;
-  box-shadow: 0 0 20px pink, 0 0 40px pink, 0 0 50px #fff;
-}
+  border: 1px solid rgba(255, 192, 203, 0.5);
 
 .header__btn:active {
   scale: 90%;
