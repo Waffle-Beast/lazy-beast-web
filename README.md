@@ -9,7 +9,7 @@ Project (this website) had started the 7th june 2023
 
 
 
-# This project was remade the 16th of July 2023
+# This project was remade the 16th of June 2023
 
 
 
