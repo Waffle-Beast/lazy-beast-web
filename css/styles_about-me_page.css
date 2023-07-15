@@ -4,7 +4,6 @@
 
 
 /* Title */
-
 .title {
   text-align: center;
   margin-bottom: 40px;
@@ -14,186 +13,248 @@
   margin-bottom: 10px;
   letter-spacing: 3px;
   font-size: 40px;
-  font-weight: 900;
+  font-weight: 500;
 }
 
 .title__description {
   color: var(--secondary);
   font-size: 25px;
+  font-weight: 300;
 }
 
 
-/* Main */
-
-
-.main {
+/* Choice */
+.choice {
+  position: relative;
   display: flex;
-  margin: 20px auto;
+  margin: 25px auto;
+
   align-items: center;
-  justify-content:center;
+  justify-content: center;
 }
 
-.block {
+.choice__block {
   background-color: rgb(39, 39, 39);
-  min-height: unset;
   border-radius: 30px;
-  padding: 30px 10px;
+  height: 185px;
+  width: 1200px;
+  padding: 40px 40px;
+  overflow: hidden;
 
   display: flex;
   flex-direction: column;
-  text-align: center;
+
+  transition: 1s;
 }
 
-.main__title {
-  margin-bottom: 30px;
-  font-size: 20px;
-  color: var(--secondary);
-}
-
-.main__sector {
+.choice__buttons {
   display: flex;
-  align-items: center;
+  column-gap: 100px;
   justify-content: center;
-  flex-direction: row;
-}
-
-.main__card {
-  width: 300px;
-  height: 385px;
+  align-items: center;
   text-align: center;
-  background-color: #dbdbdb;
-  margin: 0 40px;
-  border-radius: 15px;
-  box-shadow: 0 0 5px #fff;
+  transition: 0.6s;
 }
 
-.main__card-img {
-  width: 300px;
-  height: 300px;
-  scale: 95%;
-  border-radius: 15px;
+.choice__buttons img {
+  width: 80px;
+  transition: 0.5s;
 }
 
-.main__card-title {
-  padding: 15px;
-  color: #202020;
-  font-size: 18px;
+.choice__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.5s;
 }
 
+.choice__button:hover {
+  opacity: 0.5;
+}
 
-@media screen and (max-width: 1024px) {
-  
-  .main__card {
-    margin: 0 10px;
-  }
-  
-  .main__card-title {
-    font-size: 14px;
+.choice__button:hover img {
+  opacity: 0.5;
+}
+
+.choice-title {
+  font-family: var(--secondary-font);
+  font-weight: 500;
+}
+
+.appearing__info {
+  background-color: rgb(27, 27, 27);
+  text-align: center;
+  padding: 30px 30px;
+  margin: 40px 10px;
+  height: 100%;
+  box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.4);
+  border-radius: 25px;
+  font-size: 1.5rem;
+  display: none;
+  opacity: 0;
+
+  transition: 0.4s;
+}
+
+.info {
+  display: none;
+  flex-direction: column;
+  margin: 0 auto;
+  row-gap: 20px;
+}
+
+.info-title {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.info-p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.info-1, .info-2,
+.info-3, .info-4 {
+  display: none;
+}
+
+.active {
+  scale: 103%;
+  opacity: 0.3;
+  transition: 0.6s;
+}
+
+@media screen and (max-width: 1250px) {
+  .choice__block {
+    width: 1000px;
   }
 }
 
-
-@media screen and (max-width: 900px) {
-  
-  .main__card {
-    width: 200px;
-    height: 270px;
-    text-align: center;
-    background-color: #dbdbdb;
-    margin: 0 30px;
-    border-radius: 15px;
-    box-shadow: 0 0 5px #fff;
+@media screen and (max-width: 1035px) {
+  .choice__block {
+    width: 800px;
   }
-  
-  .main__card-img {
-    width: 200px;
-    height: 200px;
-    scale: 95%;
-    border-radius: 15px;
-  }
-  
-  .main__card-title {
-    padding: 10px;
-    color: #202020;
-    font-size: 13px;
-  }
-  
 }
 
-
-@media screen and (max-width: 768px) {
-  
-  .main__title {
-    margin-bottom: 20px;
-    font-size: 18px;
-    color: var(--secondary);
-  }
-
-  .main__card {
-    width: 200px;
-    height: 270px;
-    text-align: center;
-    background-color: #dbdbdb;
-    margin: 0 20px;
-    border-radius: 15px;
-    box-shadow: 0 0 5px #fff;
-  }
-  
-  .main__card-img {
-    width: 200px;
-    height: 200px;
-    scale: 95%;
-    border-radius: 15px;
-  }
-  
-  .main__card-title {
-    padding: 10px;
-    color: #202020;
-    font-size: 13px;
-  }
-
-}
-
-@media screen and (max-width: 480px) {
-  
-  .block {
-    background-color: rgb(39, 39, 39);
-    min-height: unset;
-    border-radius: 30px;
-    padding: 30px 10px;
-  
-    display: flex;
-    text-align: center;
-  }
-
-  .main__sector {
-    display: flex;
-    align-items: center;
+@media screen and (max-width: 855px) {
+  .choice__block {
+    position: relative;
+    width: 600px;
     justify-content: center;
-    flex-direction: column;
   }
 
-  .main__card {
-    width: 300px;
-    height: 370px;
+  .choice__buttons {
+    position: absolute;
+    top: 55px;
+    left: 70px;
+    display: flex;
+    column-gap: 50px;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    background-color: #dbdbdb;
-    margin: 20px 20px;
-    border-radius: 15px;
-    box-shadow: 0 0 5px #fff;
-  }
-  
-  .main__card-img {
-    width: 300px;
-    height: 300px;
-    scale: 95%;
-    border-radius: 15px;
-  }
-  
-  .main__card-title {
-    padding: 10px;
-    color: #202020;
-    font-size: 13px;
+    transition: 0.6s;
   }
 
+  .choice__buttons img {
+    width: 75px;
+  }
+
+  .choice-title {
+    display: none;
+  }
+
+  .appearing__info {
+    transform: translateY(80px);
+    border-radius: 25px 25px 5px 5px;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .choice__block {
+    width: 500px;
+  }
+
+  .choice__buttons {
+    position: absolute;
+    top: 65px;
+    left: 55px;
+    display: flex;
+    column-gap: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 0.6s;
+  }
+
+  .choice__buttons img {
+    width: 60px;
+  }
+
+  .choice-title {
+    display: none;
+  }
+
+  .appearing__info {
+    transform: translateY(80px);
+    border-radius: 25px 25px 5px 5px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .choice__block {
+    width: 400px;
+  }
+
+  .choice__buttons {
+    top: 65px;
+    left: 55px;
+    column-gap: 30px;
+  }
+
+  .choice__buttons img {
+    width: 50px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .choice__block {
+    width: 350px;
+    padding: 40px 15px;
+  }
+
+  .choice__buttons {
+    top: 65px;
+    left: 45px;
+    column-gap: 20px;
+  }
+
+  .choice__buttons img {
+    width: 50px;
+  }
+
+  .appearing__info {
+    transform: translateY(90px);
+    padding: 30px 10px;
+    margin: 40px 5px;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .choice__block {
+    width: 300px;
+  }
+
+  .choice__buttons {
+    top: 70px;
+    left: 39px;
+    column-gap: 15px;
+  }
+
+  .choice__buttons img {
+    width: 45px;
+  }
+
+  .appearing__info {
+    transform: translateY(90px);
+  }
 }
