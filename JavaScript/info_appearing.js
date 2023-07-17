@@ -2,42 +2,32 @@ const buttons = document.querySelectorAll('.choice-btn');
 const section = document.querySelector('.goals');
 const main_block = document.querySelector('.choice__block');
 const info = document.querySelector('.appearing__info');
+const infos = ['info-1', 'info-2', 'info-3', 'info-4'];
+const info_blocks = infos.map(info => document.querySelector(`.${info}`));
+const infos_nums = infos.map(info => {
+  return info
+    .split('-')
+    .filter(Number)
+    .sort()
+    .join('');
+});
 
-const info_1 = document.querySelector('.info-1');
-const info_2 = document.querySelector('.info-2');
-const info_3 = document.querySelector('.info-3');
-const info_4 = document.querySelector('.info-4');
 
 for (let button of buttons) {
   const value = button.dataset.value;
 
   button.onclick = () => {
     let if_active = activeCheck(buttons);
+    let btn_contains_active = button.classList.contains('active');
 
-    if (value == '1' && !button.classList.contains('active')) {
-      if (if_active.includes(true)) return;
+    for (let i = 0; i <= 4; i++) {
+      if (value == infos_nums[i] && !btn_contains_active) {
+        if (if_active.includes(true)) return;
 
-      blockAppear(button, info_1);
-    } else if (value == '1' && button.classList.contains('active')) {
-      blockDisappear(button, info_1);
-    } else if (value == '2' && !button.classList.contains('active')) {
-      if (if_active.includes(true)) return;
-
-      blockAppear(button, info_2);
-    } else if (value == '2' && button.classList.contains('active')) {
-      blockDisappear(button, info_2);
-    } else if (value == '3' && !button.classList.contains('active')) {
-      if (if_active.includes(true)) return;
-
-      blockAppear(button, info_3);
-    } else if (value == '3' && button.classList.contains('active')) {
-      blockDisappear(button, info_3);
-    } else if (value == '4' && !button.classList.contains('active')) {
-      if (if_active.includes(true)) return;
-
-      blockAppear(button, info_4);
-    } else if (value == '4' && button.classList.contains('active')) {
-      blockDisappear(button, info_4);
+        blockAppear(button, info_blocks[i]);
+      } else if (value == infos_nums[i] && btn_contains_active) {
+        blockDisappear(button, info_blocks[i]);
+      }
     }
   }
 }
