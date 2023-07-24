@@ -1,4 +1,3 @@
-import { AppearingInfo } from '../../components/ChoiceButtons/AppearingInfo/ApperingInfo';
 import { ChoiceButtons } from '../../components/ChoiceButtons/ChoiceButtons';
 import './AboutMePage.css';
 
@@ -17,8 +16,6 @@ export const AboutMePage = () => {
         <div className="choice__block">
 
           <ChoiceButtons />
-
-          <AppearingInfo />
 
         </div>
       </div> 
