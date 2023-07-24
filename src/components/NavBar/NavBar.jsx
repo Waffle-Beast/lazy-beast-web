@@ -20,8 +20,8 @@ const NavBar = () => {
           <div className="container-secondary">
             <nav className="navigation">
               <ul className="nav__list">
-                <NavLink to={'/'} className="nav__list__item nav__btn">Main Page</NavLink>
-                <NavLink to={'/AboutMe'} className="nav__list__item nav__btn">About Me</NavLink>
+                <NavLink to={'lazy-beast-web/'} className="nav__list__item nav__btn">Main Page</NavLink>
+                <NavLink to={'lazy-beast-web/AboutMe'} className="nav__list__item nav__btn">About Me</NavLink>
                 <NavLink className="nav__list__item nav__btn">Goals</NavLink>
                 <NavLink className="nav__list__item nav__btn">Useful Links</NavLink>
               </ul>

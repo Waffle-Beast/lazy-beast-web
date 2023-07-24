@@ -14,8 +14,8 @@ root.render(
     <Router>
       <NavBar />
         <Routes>
-          <Route path='/' element={<MainPage />} />
-          <Route path='/AboutMe' element={<AboutMePage />} />
+          <Route path='lazy-beast-web/' element={<MainPage />} />
+          <Route path='lazy-beast-web/AboutMe' element={<AboutMePage />} />
         </Routes>
       <Footer />
     </Router>
