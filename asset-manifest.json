@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/lazy-beast-web/static/css/main.ac7d6c35.css",
+    "main.css": "/lazy-beast-web/static/css/main.8cfb4632.css",
     "main.js": "/lazy-beast-web/static/js/main.7d4fae89.js",
     "static/js/787.41b977e0.chunk.js": "/lazy-beast-web/static/js/787.41b977e0.chunk.js",
     "static/media/lazy.jpg": "/lazy-beast-web/static/media/lazy.bb174fb865ca22ddcf6b.jpg",
     "index.html": "/lazy-beast-web/index.html",
-    "main.ac7d6c35.css.map": "/lazy-beast-web/static/css/main.ac7d6c35.css.map",
+    "main.8cfb4632.css.map": "/lazy-beast-web/static/css/main.8cfb4632.css.map",
     "main.7d4fae89.js.map": "/lazy-beast-web/static/js/main.7d4fae89.js.map",
     "787.41b977e0.chunk.js.map": "/lazy-beast-web/static/js/787.41b977e0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac7d6c35.css",
+    "static/css/main.8cfb4632.css",
     "static/js/main.7d4fae89.js"
   ]
 }
