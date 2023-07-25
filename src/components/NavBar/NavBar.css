@@ -31,6 +31,7 @@ header {
   color: pink;
   letter-spacing: 5px;
   border: 1px solid rgba(255, 192, 203, 0.5);
+  box-shadow: 0 0 2px pink, inset 0 0 5px pink;
 }
 
 .nav__btn:active {

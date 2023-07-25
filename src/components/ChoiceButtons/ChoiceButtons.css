@@ -60,8 +60,20 @@
 .info-1, .info-2,
 .info-3, .info-4 {
   display: none;
+  animation: transition 1s;
 }
 
 .active {
   display: flex !important; 
+}
+
+@keyframes transition {
+  0% {
+    transform: translateY(-10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
