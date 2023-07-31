@@ -15,7 +15,7 @@ header {
   column-gap: 5px;
 }
 
-.nav__list__item {
+.nav__btn {
   padding: 10px 0px;
   display: block;
   color: #fff;
@@ -38,6 +38,11 @@ header {
   scale: 90%;
 }
 
+.nav__btn-active {
+  color: pink;
+  font-weight: 900;
+  transform: translateY(2px);
+}
 
 /* UI For small screen devices */
 .adaptive-menu {
@@ -65,7 +70,8 @@ header {
 }
 
 @keyframes handsome {
-  0%, 100% {
+  0%,
+  100% {
     color: #fff;
   }
   50% {

@@ -1,15 +1,18 @@
-import { NavLink } from 'react-router-dom';
-import './NavBar.css';
+import { NavLink } from "react-router-dom";
+import "./NavBar.css";
+import { useState } from "react";
+import { pages } from "./pages";
 
 const NavBar = () => {
+  const [active, setActive] = useState(0);
 
   function string() {
     const words = [];
 
     for (let i = 0; i < 25; i++) {
-      words.push('BEAST');
+      words.push("BEAST");
     }
-    const wordsStr = words.join(', ').replace(/,/g, "");;
+    const wordsStr = words.join(", ").replace(/,/g, "");
     return wordsStr;
   }
 
@@ -20,10 +23,21 @@ const NavBar = () => {
           <div className="container-secondary">
             <nav className="navigation">
               <ul className="nav__list">
-                <NavLink to={'lazy-beast-web/'} className="nav__list__item nav__btn">Main Page</NavLink>
-                <NavLink to={'lazy-beast-web/AboutMe'} className="nav__list__item nav__btn">About Me</NavLink>
-                <NavLink className="nav__list__item nav__btn">Goals</NavLink>
-                <NavLink className="nav__list__item nav__btn">Useful Links</NavLink>
+                {pages.map((page, index) => {
+                  return (
+                    <NavLink
+                      to={page.to}
+                      key={`${page.title}|${index}`}
+                      onClick={() => setActive(index)}
+                      className={
+                        active === index
+                          ? "nav__btn nav__btn-active"
+                          : "nav__btn"
+                      }>
+                      {page.title}
+                    </NavLink>
+                  );
+                })}
               </ul>
             </nav>
           </div>
@@ -45,7 +59,7 @@ const NavBar = () => {
         {string()}
       </marquee>
     </header>
-  )
-}
+  );
+};
 
 export default NavBar;
